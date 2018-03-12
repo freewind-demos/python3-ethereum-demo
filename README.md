@@ -1,5 +1,7 @@
-Python3 Hello World Demo
-=========================
+Python3 Ethereum Demo
+=====================
+
+This demo is to check an issue in another project which code can find `from ethereum.abi`, but it's OK in this demo.
 
 Install `python3`:
 
@@ -13,27 +15,5 @@ Run:
 
 ```
 make init
-make test
+make run
 ```
-
-Note:
-
-Install current package:
-
-```
-python3 setup.py install
-```
-
-or for development:
-
-```
-python3 setup.py develop
-```
-
-Resources
----------
-
-- <https://www.kennethreitz.org/essays/repository-structure-and-python>
-- <https://github.com/kennethreitz/samplemod>
-- <https://stackoverflow.com/questions/1471994/what-is-setup-py>
-- pypi packages: <https://pypi.python.org/pypi>

@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from . import helpers
+from ethereum.abi import encode_abi, encode_int
 
-def get_hmm():
-    """Get a thought."""
-    return 'hmmm...'
+def encode_calldata(arg_types, args):
+    args = encode_abi(arg_types, args)
+    return args.hex()
 
-def hmm():
-    """Contemplation..."""
-    if helpers.get_answer():
-        print(get_hmm())
+if __name__ == '__main__':
+    print(encode_abi(['uint256'], [12345]))
